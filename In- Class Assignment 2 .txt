@@ -1,0 +1,69 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/brianadavis/.RData]
+[History restored from /Users/brianadavis/.Rapp.history]
+
+> PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" df <- read.csv
+Error: unexpected symbol in "PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" df"
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> > PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" df <- read.csv
+Error: unexpected '>' in ">"
+> 
+> (PATH) %>% select(-X) %>% mutate(poison = factor(poison, ordered = TRUE)) glimpse(df)
+Error: unexpected symbol in "(PATH) %>% select(-X) %>% mutate(poison = factor(poison, ordered = TRUE)) glimpse"
+>  PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" df <- read.csv> (PATH) %>% select(-X) %>% mutate(poison = factor(poison, ordered = TRUE)) glimpse(df)
+Error: unexpected symbol in " PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" df"
+> 
+> 
+> levels(df$poison)
+Error in df$poison : object of type 'closure' is not subsettable
+> library(dplyr) 
+> PATH<-"https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv"
+> df<- read.csv(PATH)
+> anova_one_way <- aov(time~poison, data = df)
+> summary(anova_one_way)
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+poison       1 0.9316  0.9316   20.67 3.96e-05 ***
+Residuals   46 2.0735  0.0451                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> > library(dplyr) 
+Error: unexpected '>' in ">"
+> > PATH<-"https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv"
+Error: unexpected '>' in ">"
+> > df<- read.csv(PATH)
+Error: unexpected '>' in ">"
+> > anova_one_way <- aov(total_cases ~ new_cases, data = df)
+Error: unexpected '>' in ">"
+> 
+> 
